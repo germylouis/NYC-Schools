@@ -55,15 +55,15 @@ public class SchoolFragment extends Fragment {
 
 
 
-        Glide.with(view.getContext().getApplicationContext())
-                .load(IMAGE_URL + movie.getPosterPath())
-                .into(posterImage);
+//        Glide.with(view.getContext().getApplicationContext())
+//                .load(IMAGE_URL + movie.getPosterPath())
+//                .into(posterImage);
 
         titleTextView.setText(schoolResults.getSchoolName());
 
-        Glide.with(view.getContext().getApplicationContext())
-                .load(IMAGE_URL + movie.getBackdropPath())
-                .into(backgroundImageView);
+//        Glide.with(view.getContext().getApplicationContext())
+//                .load(IMAGE_URL + movie.getBackdropPath())
+//                .into(backgroundImageView);
 
     }
 }
