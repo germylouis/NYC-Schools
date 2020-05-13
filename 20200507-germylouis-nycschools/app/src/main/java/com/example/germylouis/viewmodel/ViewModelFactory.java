@@ -13,12 +13,14 @@ public class ViewModelFactory implements ViewModelProvider.Factory {
     private Repository mRepository;
 
     public ViewModelFactory(Repository repository) {
+
         this.mRepository = repository;
     }
 
     @NonNull
     @Override
     public <T extends ViewModel> T create(@NonNull Class<T> modelClass) {
+
         return (T) new SchoolViewModel(mRepository);
     }
 }

@@ -25,6 +25,7 @@ public class SchoolViewModel extends ViewModel {
     public List<SchoolResults> returnSchool = new ArrayList<>();
 
     SchoolViewModel(Repository repository) {
+
         this.mRepository = repository;
     }
 

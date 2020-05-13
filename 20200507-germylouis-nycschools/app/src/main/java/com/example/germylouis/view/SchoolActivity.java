@@ -59,7 +59,6 @@ public class SchoolActivity extends AppCompatActivity implements SchoolAdapter.S
         };
 
         mainViewModel.schoolsReturned.observe(this, resultObserver);
-
     }
 
     private void setRecyclerView(List<SchoolResults> schoolResults) {
