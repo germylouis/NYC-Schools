@@ -1,5 +1,6 @@
 package com.example.germylouis.network;
 
+import com.example.germylouis.model.Information;
 import com.example.germylouis.model.SchoolResults;
 
 import java.util.List;
@@ -45,5 +46,8 @@ public class RetrofitInstance {
         return service.getSchools();
     }
 
+    public Observable<List<Information>> getInformation(String schoolDBN) {
+        return service.getInformation(schoolDBN);
+    }
 
 }

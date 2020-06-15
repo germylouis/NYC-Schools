@@ -1,8 +1,6 @@
 package com.example.germylouis.view;
 
 import android.os.Bundle;
-import android.os.Parcelable;
-import android.util.Log;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -48,7 +46,7 @@ public class SchoolActivity extends AppCompatActivity implements SchoolAdapter.S
 
     private void getSchools() {
 
-        mainViewModel.getSchools();
+        mainViewModel.getSchool();
         schoolList = mainViewModel.returnSchool;
         resultObserver = new Observer<Boolean>() {
 
@@ -72,7 +70,7 @@ public class SchoolActivity extends AppCompatActivity implements SchoolAdapter.S
 
         Bundle schoolBundle = new Bundle();
         FragmentManager fm = getSupportFragmentManager();
-        schoolBundle.putParcelable("school_results", schoolResult);
+        schoolBundle.putParcelable("dbn_key", schoolResult);
 
         schoolFragment.setArguments(schoolBundle);
 
@@ -81,7 +79,7 @@ public class SchoolActivity extends AppCompatActivity implements SchoolAdapter.S
         } else {
             getSupportFragmentManager()
                     .beginTransaction()
-                    .add(R.id.main_view_layout, schoolFragment)
+                    .replace(R.id.info_framelayout, schoolFragment)
                     .addToBackStack(schoolFragment.getTag())
                     .commit();
         }

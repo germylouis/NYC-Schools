@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">20200507-germylouis-nycschools</string>
+    <string name="error_string">error : %s</string>
+    <string name="dbn_key">dbn_key</string>
+    <string name="math_string">Average Math Score: %s</string>
+    <string name="null_score">MATH; no score available</string>
+    <string name="null_score_read">READING; no score available</string>
+    <string name="null_score_write">WRITING; no score available</string>
+    <string name="write_string">Avergae Writing Score:  %s</string>
+    <string name="read_string">Average Reading Score:  %s</string>
 </resources>
